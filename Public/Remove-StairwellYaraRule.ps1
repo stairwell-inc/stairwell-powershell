@@ -1,6 +1,6 @@
 #requires -version 6.2
 
-function New-StairwellYaraRule {
+function Remove-StairwellYaraRule {
     [alias('SwDeleteRule')]
     <#
     .SYNOPSIS
