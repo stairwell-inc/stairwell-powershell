@@ -4,7 +4,7 @@ function Get-StairwellHostComments {
     [alias('SwObjComments')]
     <#
     .SYNOPSIS
-    Gets the object comments from Stairwell
+    Gets the host comments from Stairwell
     .DESCRIPTION
     This function gathers the comments metadata for a given Hostname
     .PARAMETER Hostname
