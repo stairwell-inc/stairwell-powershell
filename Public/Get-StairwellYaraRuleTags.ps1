@@ -1,6 +1,6 @@
 #requires -version 6.2
 
-function Get-StairwellYaraRule {
+function Get-StairwellYaraRuleTags {
     [alias('SwRuleTags')]
     <#
     .SYNOPSIS
