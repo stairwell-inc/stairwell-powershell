@@ -12,7 +12,7 @@ function Add-StairwellHostTag {
     .PARAMETER Tag
     The value of the tag
     .PARAMETER EnvonmentId
-    The environment the comment (and the object the comment is being applied to) resides in. If no EnvironmentId is supplied then the EnvironmentId in the global config will be used.
+    The environment the tag (and the object the tag is being applied to) resides in. If no EnvironmentId is supplied then the EnvironmentId in the global config will be used.
     .INPUTS
     Can accept one (1) Hostname string
     .NOTES
@@ -35,7 +35,7 @@ function Add-StairwellHostTag {
         [string]$Hostname,
 
         [Parameter(Mandatory, Position=1, ValueFromPipeline,
-        HelpMessage="Enter the name of the tag.")]
+        HelpMessage="Enter the name/value of the tag.")]
         [string]$Tag,
 
         [Parameter(Mandatory=$false, Position=2,
