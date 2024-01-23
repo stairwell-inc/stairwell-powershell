@@ -1,3 +1,5 @@
+![Stairwell, Inc.](https://github.com/stairwell-inc/stairwell-powershell/blob/main/Stairwell_Primary-Logo_RGB.png)
+
 ### stairwell-powershell is a PowerShell module used to aid in the utilization of the Stairwell platform. stairwell-powershell is comprised of the following functions:
 
 ## Assets/Forwarders
