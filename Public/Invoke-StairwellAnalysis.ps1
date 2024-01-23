@@ -26,8 +26,14 @@ function Invoke-StairwellAnalysis {
     <CustomPSObject containing results>
 
     .NOTES
+    It is highly suggested to run this in -Verbose mode to be able to see the progress and the final report of the analysis which includes 
+    a list of assets that have a sighting of any the ObjectIds (or their variants) that have a malicious MalEval score or have an Opinion
+    of 'MALICIOUS'.
+
+    The final object has a NoteProperty called 'AffectedAssets' that contains an array of the asset machine names that have a malicious sighting.
+    
     Be aware this is a multi-threaded module that is making a series of API calls for each object supplied in order to be performant.
-    A high number of ObjectIds and increasing the RecursionDepth can have a noticable impact of resource usage.
+    A high number of ObjectIds and increasing the RecursionDepth can have a noticable impact of resource usage and time required.
 
     Also be aware that ObjectIds are shortened for display purposes only
     #>
@@ -104,6 +110,7 @@ function Invoke-StairwellAnalysis {
         
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Starting analysis of the supplied $($ObjectIds.Count) IoC(s)."
+        Write-Verbose "This may take a few moments or longer depending on the number of ObjectIds and RecursionDepth."
         $TotalCount = 0
         $SightingCount = 0
         foreach($IoC in $ObjectIds) {
