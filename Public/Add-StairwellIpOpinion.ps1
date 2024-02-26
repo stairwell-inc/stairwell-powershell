@@ -1,5 +1,3 @@
-#requires -version 6.2
-
 function Add-StairwellIpOpinion {
     [alias('AddSwIpOpinion')]
     <#

@@ -1,6 +1,3 @@
-#requires -version 6.2
-
-# Define function to make an API request to upload a file
 function Send-StairwellFile {
     <#
     .SYNOPSIS
