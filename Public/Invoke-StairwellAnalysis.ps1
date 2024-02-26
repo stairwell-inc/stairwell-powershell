@@ -74,7 +74,7 @@ function Invoke-StairwellAnalysis {
     )
 
     begin {
-        # precheck
+        precheck
     } # End begin block
 
     process {
