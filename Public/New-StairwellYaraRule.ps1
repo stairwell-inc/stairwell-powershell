@@ -1,5 +1,3 @@
-#requires -version 6.2
-
 function New-StairwellYaraRule {
     [alias('SwNewRule')]
     <#
