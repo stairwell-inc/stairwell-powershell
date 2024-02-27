@@ -78,11 +78,8 @@ function Get-StairwellDefaultAsset {
         
         $ReqParams = @{
             Uri = $Url
-            Method = 'GET'
-            Headers = @{'Authorization' = $SWapiToken}
-            TimeoutSec = 60
-            MaximumRetryCount = 5
-            RetryIntervalSec = 1
+            Method = "GET"
+            Headers = @{Authorization = $SWapiToken}
         }
         
         try {
