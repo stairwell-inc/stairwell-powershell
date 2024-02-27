@@ -100,7 +100,7 @@ function Send-StairwellFile {
         
         try {
             # Attempt the 1st stage of the upload
-            $Response1 = Invoke-WebRequest -Uri $Url -Method POST -Body ($Stage1Body | ConvertTo-Json) -TimeoutSec 60 -MaximumRetryCount 5 -RetryIntervalSec 1 -ErrorAction Stop
+            $Response1 = Invoke-WebRequest -Uri $Url -Method POST -Body ($Stage1Body | ConvertTo-Json)  -ErrorAction Stop
             $StatusCode = $Response1.StatusCode
             Write-Verbose "Stage 1 Status Code: $($StatusCode)"
         } catch [System.Net.WebException] {
@@ -198,7 +198,7 @@ Content-Type: application/octet-stream
                 
                 # Attempt the 2nd stage upload
                 try {
-                    $response2 = Invoke-WebRequest -Uri $UploadUrl -Method POST -Headers $headers -ContentType "multipart/form-data; boundary=$($boundary)" -Body $Body -TimeoutSec 300 -MaximumRetryCount 5 -RetryIntervalSec 1 -ErrorAction Stop
+                    $response2 = Invoke-WebRequest -Uri $UploadUrl -Method POST -Headers $headers -ContentType "multipart/form-data; boundary=$($boundary)" -Body $Body -ErrorAction Stop
                 } catch [System.Net.WebException] {
                     Write-Verbose -Message $($Error[0].Exception.Message)
                 }
