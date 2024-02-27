@@ -50,7 +50,7 @@ function Add-StairwellHostTag {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Adding Tag to hostname: $($Hostname)"
         
-        $Url = $script:baseUri + 'hostname/' + $Hostname.ToLower() + '/tags'
+        $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/tags'
         Write-Verbose "Using Url: $($Url)"
         if ($null -ne $EnvironmentId) {
             $EnvId = $EnvironmentId
