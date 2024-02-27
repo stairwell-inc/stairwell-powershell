@@ -44,7 +44,7 @@ function Remove-StairwellAssetTag {
         Write-Verbose "Removing Asset Tag $($TagId) from $($AssetId)"
         
         if ($TagId -match '\w{13}\%3D\%3D\%3D') {
-            $TagIde = $TagId
+            $TagIde = $TagId.ToUpper()
             Write-Verbose "Using $($TagIde)"
         } elseif ($TagId -match '\w{13}\=\=\=') {
             $TagIde = $TagId -replace '\=\=\=', '%3D%3D%3D'
