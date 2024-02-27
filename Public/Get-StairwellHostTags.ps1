@@ -37,7 +37,7 @@ function Get-StairwellHostTags {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Getting Tags for $($Hostname)"
         
-        $Url = $script:baseUri + 'hostname/' + $Hostname.ToLower() + '/tags'
+        $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/tags'
         Write-Verbose "Using Url: $($Url)"
 
         $ReqParams = @{
