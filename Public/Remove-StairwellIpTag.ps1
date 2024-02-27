@@ -59,9 +59,6 @@ function Remove-StairwellIpTag {
             Uri = $Url
             Method = 'DELETE'
             Headers = $script:headers
-            TimeoutSec = 60
-            MaximumRetryCount = 5
-            RetryIntervalSec = 1
         }
 
         try {
