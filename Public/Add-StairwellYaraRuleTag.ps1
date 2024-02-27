@@ -71,9 +71,6 @@ function Add-StairwellYaraRuleTag {
             Method = 'POST'
             Headers = $script:headers
             Body = $($Body | ConvertTo-Json)
-            TimeoutSec = 60
-            MaximumRetryCount = 5
-            RetryIntervalSec = 1
         }
 
         try {
