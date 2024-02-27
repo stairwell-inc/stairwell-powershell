@@ -53,7 +53,7 @@ function Add-StairwellAssetTag {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Adding Asset Tag for $($AssetId)"
         
-        $Url = $script:baseUri + 'assets/' + $AssetId.ToLower() + '/tags'
+        $Url = $script:baseUri + 'assets/' + $AssetId.ToUpper() + '/tags'
         Write-Verbose "Using Url: $($Url)"
 
         
