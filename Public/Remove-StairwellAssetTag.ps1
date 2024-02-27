@@ -53,7 +53,7 @@ function Remove-StairwellAssetTag {
             Write-Error "Invalid TagId format. Valid Example: JXX1XXX23XX45==="
         }
 
-        $Url = $script:baseUri + 'assets/' + $AssetId.ToLower() + '/tags/' + $TagIde
+        $Url = $script:baseUri + 'assets/' + $AssetId.ToUpper() + '/tags/' + $TagIde
         Write-Verbose "Using Url: $($Url)"
 
         $ReqParams = @{
