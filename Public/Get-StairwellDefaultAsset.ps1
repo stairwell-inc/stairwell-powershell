@@ -9,9 +9,9 @@ function Get-StairwellDefaultAsset {
     .PARAMETER EnvironmentId
     Enter the Environment ID from your Stairwell environment See: https://docs.stairwell.com/docs/how-to-find-the-environment-id
     .EXAMPLE
-    Get-StairwellDefaultAsset -EnvironmentId "<ENVIRONMENT-ID>"
+    Get-StairwellDefaultAsset -NewEnvironmentId "<ENVIRONMENT-ID>"
     
-    ABC123-ZYX654-LMN789-DEFG6543
+    Default asset id: ABC123-ZYX654-LMN789-DEFG6543
 
     #>
     [CmdletBinding()]
