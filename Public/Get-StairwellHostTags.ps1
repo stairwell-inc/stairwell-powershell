@@ -44,9 +44,6 @@ function Get-StairwellHostTags {
             Uri = $Url
             Method = 'GET'
             Headers = $script:headers
-            TimeoutSec = 60
-            MaximumRetryCount = 5
-            RetryIntervalSec = 1
         }
 
         try {
