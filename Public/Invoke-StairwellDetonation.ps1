@@ -63,9 +63,6 @@ function Invoke-StairwellDetonation {
             Uri = $Url
             Method = 'POST'
             Headers = $script:headers
-            TimeoutSec = 60
-            MaximumRetryCount = 5
-            RetryIntervalSec = 1
         }
 
         try {
