@@ -53,7 +53,7 @@ function Get-StairwellAsset {
             if ($response.StatusCode -eq 200) {
                 $Content = $response.Content | ConvertFrom-Json
                 Write-Verbose "Asset data returned for: $($AssetId)."
-                return $Content.assets
+                return $Content
             } else {
                 Write-Error -Message "Error; Response Code: $($response.StatusCode) $($response.StatusDescription)"
             }
