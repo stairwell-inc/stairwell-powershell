@@ -51,9 +51,6 @@ function Receive-StairwellObject {
             Uri = $Url
             Method = 'GET'
             Headers = $script:headers
-            TimeoutSec = 240
-            MaximumRetryCount = 5
-            RetryIntervalSec = 1
         }
 
         try {
