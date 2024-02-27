@@ -36,7 +36,7 @@ function Get-StairwellHostOpinions {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Getting Opinions for $($Hostname)"
         
-        $Url = $script:baseUri + 'hostname/' + $Hostname.ToLower() + '/opinions'
+        $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/opinions'
         Write-Verbose "Using Url: $($Url)"
 
         $ReqParams = @{
