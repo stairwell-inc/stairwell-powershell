@@ -28,7 +28,7 @@ function Get-StairwellDefaultAsset {
     )
 
     begin {
-        # precheck
+        precheck
     }
 
     process {
