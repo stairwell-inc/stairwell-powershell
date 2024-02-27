@@ -50,7 +50,7 @@ function Add-StairwellHostOpinion {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Adding Opinion to host: $($Hostname)"
         
-        $Url = $script:baseUri + 'objects/' + $Hostname.ToLower() + '/opinions'
+        $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/opinions'
         Write-Verbose "Using Url: $($Url)"
         if ($null -ne $EnvironmentId) {
             $EnvId = $EnvironmentId
