@@ -36,12 +36,12 @@ function Install-StairwellForwarder {
 
         [Parameter(Mandatory,
         HelpMessage="Enter the path to the package installer OR the folder it should be downloaded to if downloading the latest version.")]
-        [ValidatePattern("^([a-zA-Z]:?)([\/]{0,2})?([a-zA-Z0-9\s\+\`\~\!\@\#\$\%\^\&\(\)\_\-\+\=\{\}\[\]\;\'\/\.\,\<\>]{1,128})*?$")]
+        [ValidatePattern("^([a-zA-Z]:?|%SystemRoot%)([\\]{0,2})?([a-zA-Z0-9\s\+\`\~\!\@\#\$\%\^\&\(\)\_\-\+\=\{\}\[\]\;\'\/\.\,\<\>\\]{1,128})*?$")]
         [string]$FilePath,
 
         [Parameter(Mandatory=$False,
         HelpMessage="Enter the path/folder where the file will be copied to on the remote computer. 'C:\Temp' will be used by default.")]
-        [ValidatePattern("^([a-zA-Z]:?)([\/]{0,2})?([a-zA-Z0-9\s\+\`\~\!\@\#\$\%\^\&\(\)\_\-\+\=\{\}\[\]\;\'\/\.\,\<\>]{1,128})*?$")]
+        [ValidatePattern("^([a-zA-Z]:?|%SystemRoot%)([\\]{0,2})?([a-zA-Z0-9\s\+\`\~\!\@\#\$\%\^\&\(\)\_\-\+\=\{\}\[\]\;\'\/\.\,\<\>\\]{1,128})*?$")]
         [string]$DestFolderPath="C:\Temp\InceptionForwarderBundle.exe",
 
         [Parameter(Mandatory,
