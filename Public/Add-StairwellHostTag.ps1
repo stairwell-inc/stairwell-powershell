@@ -52,10 +52,10 @@ function Add-StairwellHostTag {
         
         $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/tags'
         Write-Verbose "Using Url: $($Url)"
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
-        } else {
+        if ([string]::IsNullOrEmpty($EnvironmentId)) {
             $EnvId = $script:EnvironmentId
+        } else {
+            $EnvId = $EnvironmentId
         }
         Write-Verbose "Using $($EnvId) for the Environment Id"
         
