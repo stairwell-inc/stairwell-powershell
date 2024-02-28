@@ -40,6 +40,7 @@ function Add-StairwellHostComment {
     
     begin {
         precheck
+        $Hostname = $Hostname.Trim()
     }
 
     process {
@@ -48,10 +49,10 @@ function Add-StairwellHostComment {
         
         $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/comments'
         Write-Verbose "Using Url: $($Url)"
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
-        } else {
+        if ([string]::IsNullOrEmpty($environmentId)) {
             $EnvId = $script:EnvironmentId
+        } else {
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the Environment Id"
         

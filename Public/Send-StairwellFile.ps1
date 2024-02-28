@@ -37,6 +37,8 @@ function Send-StairwellFile {
     begin {
         precheck
 
+        $AssetID = $AssetID.Trim()
+
         $FileName = Split-Path $FilePath -leaf
         # Obtain SHA256 and MD5 hash values for file
         try {

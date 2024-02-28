@@ -36,6 +36,8 @@ function Remove-StairwellHostTag {
     
     begin {
         precheck
+        $Hostname = $Hostname.Trim()
+        $TagId = $TagId.Trim()
     }
 
     process {
@@ -52,7 +54,7 @@ function Remove-StairwellHostTag {
             Write-Error "Invalid TagId format. Valid Example: JXX1XXX23XX45==="
         }
 
-        $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/tags/' + $TagIdEnc
+        $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/tags/' + $TagIdEnc.ToUpper()
         Write-Verbose "Using Url: $($Url)"
 
         $ReqParams = @{

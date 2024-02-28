@@ -35,7 +35,7 @@ function Get-StairwellDefaultAsset {
         Write-Verbose "-------------------------------------------"
         if($Null -ne $NewEnvironmentId) {
             Write-Verbose "Getting Default AssetId for supplied Environment: $($NewEnvironmentId)"
-            $SWEnvironmentId = $NewEnvironmentId
+            $SWEnvironmentId = $NewEnvironmentId.Trim()
         } else {
             if($Null -ne $script:EnvironmentId) {
                 Write-Verbose "Getting Default AssetId for Environment from config: $($script:EnvironmentId)"
@@ -44,7 +44,7 @@ function Get-StairwellDefaultAsset {
                 $envInput = Read-Host -Prompt "Enter your Stairwell Environment ID"
                 if ($envInput -match "\w{6}\-\w{6}\-\w{6}\-\w{8}") {
                     $script:environmentId = $envInput
-                    $SWEnvironmentId = $envInput
+                    $SWEnvironmentId = $envInput.Trim()
                 } else {
                     Write-Warning "Invalid format for Environment ID: $($envInput)"
                 }
@@ -53,7 +53,7 @@ function Get-StairwellDefaultAsset {
 
         if($Null -ne $NewApiToken) {
             Write-Verbose "Using supplied Api Token"
-            $SWApiToken = $NewApiToken
+            $SWApiToken = $NewApiToken.Trim()
         } else {
             if($Null -ne $script:ApiToken) {
                 Write-Verbose "Using ApiToken from config"
@@ -62,7 +62,7 @@ function Get-StairwellDefaultAsset {
                 $tokenInput = Read-Host -Prompt "Enter your Stairwell Api Token"
                 if ($tokenInput -match "\w{52}") {
                     $script:ApiToken = $tokenInput
-                    $SWApiToken = $tokenInput
+                    $SWApiToken = $tokenInput.Trim()
                 } else {
                     Write-Warning "Invalid format for API Token: $($tokenInput)"
                 }

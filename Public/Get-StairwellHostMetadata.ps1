@@ -32,6 +32,7 @@ function Get-StairwellHostMetadata {
     
     begin {
         precheck
+        $Hostname = $Hostname.Trim()
     }
 
     process {

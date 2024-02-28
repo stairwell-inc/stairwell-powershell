@@ -30,10 +30,10 @@ function Get-StairwellAssetList {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Getting all Asset Metadata for Environment: $($EnvironmentId)"
         
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
+        if ([string]::IsNullOrEmpty($environmentId)) {
+            $EnvId = $script:EnvironmentId
         } else {
-            $EnvId = $Script:EnvironmentId
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the EnvironmentId."
         

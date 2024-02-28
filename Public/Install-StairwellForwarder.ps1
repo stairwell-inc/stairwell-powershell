@@ -71,7 +71,7 @@ function Install-StairwellForwarder {
     begin {}
 
     process {
-        
+        $ForwarderToken = $ForwarderToken.Trim()
         $FilePath = Join-Path $FilePath "InceptionForwarderBundle.exe"
 
         # Check for -Download switch

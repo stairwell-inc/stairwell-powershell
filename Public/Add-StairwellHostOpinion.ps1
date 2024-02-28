@@ -44,6 +44,7 @@ function Add-StairwellHostOpinion {
     
     begin {
         precheck
+        $Hostname = $Hostname.Trim()
     }
 
     process {
@@ -52,10 +53,10 @@ function Add-StairwellHostOpinion {
         
         $Url = $script:baseUri + 'hostnames/' + $Hostname.ToLower() + '/opinions'
         Write-Verbose "Using Url: $($Url)"
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
-        } else {
+        if ([string]::IsNullOrEmpty($environmentId)) {
             $EnvId = $script:EnvironmentId
+        } else {
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the Environment Id"
         

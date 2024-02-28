@@ -52,10 +52,10 @@ function Add-StairwellIpTag {
         
         $Url = $script:baseUri + 'ipAddresses/' + $IpAddress + '/tags'
         Write-Verbose "Using Url: $($Url)"
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
-        } else {
+        if ([string]::IsNullOrEmpty($environmentId)) {
             $EnvId = $script:EnvironmentId
+        } else {
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the Environment Id"
         

@@ -55,6 +55,7 @@ function Get-StairwellDetonation {
     
     begin {
         precheck
+        $ObjectId = $ObjectId.Trim()
     }
 
     process {

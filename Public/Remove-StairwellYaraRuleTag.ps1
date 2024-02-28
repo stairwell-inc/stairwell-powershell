@@ -34,6 +34,7 @@ function Remove-StairwellYaraRuleTag {
     
     begin {
         precheck
+        $TagId = $TagId.Trim()
     }
 
     process {

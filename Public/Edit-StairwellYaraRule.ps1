@@ -55,10 +55,10 @@ function Edit-StairwellYaraRule {
         Write-Verbose "Editing Yara Rule: $($Name)"
         
         # Determining what EnvironmentId to use
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
+        if ([string]::IsNullOrEmpty($environmentId)) {
+            $EnvId = $script:EnvironmentId
         } else {
-            $EnvId = $Script:EnvironmentId
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the Environment Id"
         

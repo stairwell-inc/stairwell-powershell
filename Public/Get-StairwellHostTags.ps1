@@ -31,6 +31,7 @@ function Get-StairwellHostTags {
     
     begin {
         precheck
+        $Hostname = $Hostname.Trim()
     }
 
     process {

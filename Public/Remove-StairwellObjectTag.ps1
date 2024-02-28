@@ -38,6 +38,7 @@ function Remove-StairwellObjectTag {
     
     begin {
         precheck
+        $TagId = $TagId.Trim()
     }
 
     process {

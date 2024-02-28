@@ -47,6 +47,7 @@ function Add-StairwellObjectOpinion {
     
     begin {
         precheck
+        $ObjectId = $ObjectId.Trim()
     }
 
     process {
@@ -55,10 +56,10 @@ function Add-StairwellObjectOpinion {
         
         $Url = $script:baseUri + 'objects/' + $ObjectId.ToLower() + '/opinions'
         Write-Verbose "Using Url: $($Url)"
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
-        } else {
+        if ([string]::IsNullOrEmpty($environmentId)) {
             $EnvId = $script:EnvironmentId
+        } else {
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the Environment Id"
         

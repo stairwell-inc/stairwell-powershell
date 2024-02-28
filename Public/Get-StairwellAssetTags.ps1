@@ -25,6 +25,7 @@ function Get-StairwellAssetTags {
 
     begin {
         precheck
+        $AssetId = $AssetId.Trim()
     }
 
     process {

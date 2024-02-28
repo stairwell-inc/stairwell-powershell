@@ -37,6 +37,7 @@ function Remove-StairwellAssetTag {
     
     begin {
         precheck
+        $TagId = $TagId.Trim()
     }
 
     process {

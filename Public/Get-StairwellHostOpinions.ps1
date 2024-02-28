@@ -30,6 +30,7 @@ function Get-StairwellHostOpinions {
     
     begin {
         precheck
+        $Hostname = $Hostname.Trim()
     }
 
     process {

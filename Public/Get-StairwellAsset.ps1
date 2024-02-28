@@ -33,6 +33,7 @@ function Get-StairwellAsset {
 
     begin {
         precheck
+        $AssetId = $AssetId.Trim()
     }
 
     process {

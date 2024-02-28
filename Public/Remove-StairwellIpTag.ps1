@@ -36,6 +36,7 @@ function Remove-StairwellIpTag {
     
     begin {
         precheck
+        $TagId = $TagId.Trim()
     }
 
     process {
