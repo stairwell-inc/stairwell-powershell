@@ -52,8 +52,8 @@ function Send-StairwellFile {
 
         # If no $AssetID is supplied, we check to see if one is already defined within the module scope, if there is we use it
         # If no $AssetID exists in the module scope we use Get-StairwellDefaultAsset which uses the environment_id from the module config to get the DefaultAsset for that environment
-        if($null = $AssetID) {
-            if($null = $Script:DefaultAsset) {
+        if($null -eq $AssetID) {
+            if($null -eq $Script:DefaultAsset) {
                 $AssetID = Get-StairwellDefaultAsset
                 Write-Verbose "No Default Asset defined, calling Get-StairwellDefault Asset using the environment_id in the config: $(AssetId)"
             } else {

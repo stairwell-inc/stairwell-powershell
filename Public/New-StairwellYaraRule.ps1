@@ -46,10 +46,10 @@ function New-StairwellYaraRule {
         Write-Verbose "-------------------------------------------"
         Write-Verbose "Submitting new Yara Rule"
         
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
+       if ([string]::IsNullOrEmpty($environmentId)) {
+            $EnvId = $script:EnvironmentId
         } else {
-            $EnvId = $Script:EnvironmentId
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) as the Environment the Yara Rule will belong to."
         

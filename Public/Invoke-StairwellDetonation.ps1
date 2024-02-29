@@ -43,7 +43,7 @@ function Invoke-StairwellDetonation {
 
         [Parameter(Mandatory=$false, Position=1, ValueFromPipeline,
         HelpMessage="Enter the SHA256 for the parent file/object where the detonation will be triggered.")]
-        [Alias("File", "Parent", "ParentObj")]
+        [Alias("Parent", "ParentObj")]
         [ValidatePattern("\w{64}")]
         [string]$ParentObject
     )
@@ -66,17 +66,17 @@ function Invoke-StairwellDetonation {
         }
 
         try {
-            if ($null -ne $ParentObject) {
+            if ([string]::IsNullOrEmpty($ParentObject)) {
+                $response = Invoke-WebRequest @ReqParams
+                $Content = $response.Content | ConvertFrom-Json
+                Write-Verbose "Submission for detonation requested. This will take several minutes to complete."
+                return $Content
+            } else {
                 Write-Verbose "Parent Object supplied $(Compress-ObjectName $ParentObject)"
                 $Body = @{parent=$ParentObject}
                 $ReqParams['Body'] = ($Body | ConvertTo-Json)
                 $response = Invoke-WebRequest @ReqParams
                 $Content = $response.Content | ConvertFrom-Json
-                return $Content
-            } else {
-                $response = Invoke-WebRequest @ReqParams
-                $Content = $response.Content | ConvertFrom-Json
-                Write-Verbose "Submission for detonation requested. This will take several minutes to complete."
                 return $Content
             }
             

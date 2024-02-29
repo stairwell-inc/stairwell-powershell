@@ -40,10 +40,10 @@ function Remove-StairwellYaraRule {
         Write-Verbose "Removing Yara Rule: $($Name). WARNING, this cannot be undone."
 
 
-        if ($null -ne $EnvironmentId) {
-            $EnvId = $EnvironmentId
+        if ([string]::IsNullOrEmpty($environmentId)) {
+            $EnvId = $script:EnvironmentId
         } else {
-            $EnvId = $Script:EnvironmentId
+            $EnvId = $EnvironmentId.Trim()
         }
         Write-Verbose "Using $($EnvId) for the EnvironmentId"
         
