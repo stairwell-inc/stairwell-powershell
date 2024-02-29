@@ -30,10 +30,6 @@ Obtains the default asset id for a given Stairwell environment
 
 Deletes the specified tag for an asset
 
-#### `Install-StairwellForwarder`
-
-Installs the Stairwell forwarder on one or many Windows OS machines.
-
 ## Objects/Files
 
 **Tools for analyzing, classifying, or interacting with objects/files.**
@@ -81,10 +77,6 @@ Gets the object tags from Stairwell.
 #### `Get-StairwellObjectVariants`
 
 Gets the object variants (statistically similar files) from Stairwell
-
-#### `Invoke-StairwellAnalysis`
-
-(Beta) Perform a full analysis on a collection of objects using the Stairwell platform. Uploads new files and reports affected assets.
 
 #### `Invoke-StairwellDetonation`
 
