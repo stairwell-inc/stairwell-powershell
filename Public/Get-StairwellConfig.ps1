@@ -1,4 +1,5 @@
 function Get-StairwellConfig {
+    [alias('GSwC')]
     <#
     .SYNOPSIS
     Gets the curretnly active Stairwell environment variables

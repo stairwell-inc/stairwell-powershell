@@ -1,5 +1,5 @@
 function Find-StairwellObjectMetadata {
-    [alias('SwObjSearch', 'Search-StairwellObjectMetadata')]
+    [alias('FSOM')]
     <#
     .SYNOPSIS
     Search Stairwell objects using a CEL query

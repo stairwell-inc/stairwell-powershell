@@ -1,5 +1,5 @@
 function Get-StairwellIpMetadata {
-    [alias('SwIpMetadata', 'SwIpInfo')]
+    [alias('GIPM')]
     <#
     .SYNOPSIS
     Gets the IpAddress metadata from Stairwell

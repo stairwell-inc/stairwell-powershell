@@ -1,5 +1,4 @@
 function Add-StairwellIpOpinion {
-    [alias('AddSwIpOpinion')]
     <#
     .SYNOPSIS
     Creates a new opinion for an IpAddress

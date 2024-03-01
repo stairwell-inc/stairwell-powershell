@@ -1,5 +1,5 @@
 function Receive-StairwellObject {
-    [alias('SwDownload', 'SwDownloadObject', 'SwDownloadFile')]
+    [alias('RSO')]
     <#
     .SYNOPSIS
     Downloads the object to the user's local device

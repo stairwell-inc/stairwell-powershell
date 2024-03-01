@@ -12,7 +12,7 @@
 # RootModule = ''
 
 # Version number of this module.
-ModuleVersion = '1.0'
+ModuleVersion = '1.1'
 
 # Supported PSEditions
 # CompatiblePSEditions = @()
@@ -30,7 +30,7 @@ CompanyName = 'Stairwell, Inc.'
 Copyright = '(c) Stairwell, Inc. All rights reserved.'
 
 # Description of the functionality provided by this module
-# Description = ''
+Description = 'A PowerShell module to aid in the utilization of the Stairwell platform.'
 
 # Minimum version of the PowerShell engine required by this module
 # PowerShellVersion = ''

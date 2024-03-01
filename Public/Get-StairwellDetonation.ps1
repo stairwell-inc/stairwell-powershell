@@ -1,5 +1,5 @@
 function Get-StairwellDetonation {
-    [alias('SwGetDetonation')]
+    [alias('GSD')]
     <#
     .SYNOPSIS
     Gets the object detonation report from Stairwell

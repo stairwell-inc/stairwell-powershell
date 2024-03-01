@@ -1,5 +1,4 @@
 function Get-StairwellIpComments {
-    [alias('SwIpComments')]
     <#
     .SYNOPSIS
     Gets the IpAddress comments from Stairwell

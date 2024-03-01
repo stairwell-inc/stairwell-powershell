@@ -1,5 +1,4 @@
 function New-StairwellYaraRule {
-    [alias('SwNewRule')]
     <#
     .SYNOPSIS
     Add a new Yara rule to the given Stairwell environment

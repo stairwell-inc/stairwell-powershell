@@ -1,5 +1,4 @@
 function Add-StairwellIpComment {
-    [alias('AddSwIpComment')]
     <#
     .SYNOPSIS
     Creates a new comment for a IpAddress

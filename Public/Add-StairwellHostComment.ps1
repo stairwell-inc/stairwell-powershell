@@ -1,5 +1,4 @@
 function Add-StairwellHostComment {
-    [alias('SwHostComment')]
     <#
     .SYNOPSIS
     Creates a new comment for a hostname

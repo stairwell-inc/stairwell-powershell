@@ -1,5 +1,5 @@
 function Get-StairwellObjectSightings {
-    [alias('SwObjSightings')]
+    [alias('GSOS')]
     <#
     .SYNOPSIS
     Gets the object sightings from Stairwell

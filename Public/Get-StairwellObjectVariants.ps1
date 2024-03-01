@@ -1,5 +1,5 @@
 function Get-StairwellObjectVariants {
-    [alias('SwObjVariants')]
+    [alias('GSOV')]
     <#
     .SYNOPSIS
     Gets the object variants from Stairwell

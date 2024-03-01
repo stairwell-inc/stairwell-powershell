@@ -1,5 +1,5 @@
 function Get-StairwellHostMetadata {
-    [alias('SwHostMetadata', 'SwHostInfo')]
+    [alias('GSHM')]
     <#
     .SYNOPSIS
     Gets the hostname metadata from Stairwell

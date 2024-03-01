@@ -1,5 +1,5 @@
 function Invoke-StairwellDetonation {
-    [alias('SwDetonate')]
+    [alias('Detonate','ISD')]
     <#
     .SYNOPSIS
     Triggers a new detonation for the parent object.

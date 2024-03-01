@@ -1,5 +1,5 @@
 function Get-StairwellDefaultAsset {
-    [alias('SwDefaultAsset')]
+    [alias('GSDA')]
     <#
     .SYNOPSIS
     Obtains the default asset id for a given Stairwell environment

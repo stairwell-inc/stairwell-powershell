@@ -1,5 +1,4 @@
 function Remove-StairwellIpTag {
-    [alias('SwDeleteIpTag')]
     <#
     .SYNOPSIS
     Deletes the specified tag for a IpAddress

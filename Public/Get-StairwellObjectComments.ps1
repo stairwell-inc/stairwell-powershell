@@ -1,5 +1,4 @@
 function Get-StairwellObjectComments {
-    [alias('SwObjComments')]
     <#
     .SYNOPSIS
     Gets the object comments from Stairwell

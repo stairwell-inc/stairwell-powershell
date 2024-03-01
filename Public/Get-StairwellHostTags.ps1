@@ -1,5 +1,4 @@
 function Get-StairwellHostTags {
-    [alias('SwHostTags')]
     <#
     .SYNOPSIS
     Gets the hostname opinions from Stairwell

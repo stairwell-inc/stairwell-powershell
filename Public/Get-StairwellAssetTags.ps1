@@ -1,5 +1,4 @@
 function Get-StairwellAssetTags {
-    [alias('SwAssetTags')]
     <#
     .SYNOPSIS
     Obtains the asset's tag infomation for a given AssetId

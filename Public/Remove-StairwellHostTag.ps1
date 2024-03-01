@@ -1,5 +1,4 @@
 function Remove-StairwellHostTag {
-    [alias('SwDeleteHostTag')]
     <#
     .SYNOPSIS
     Deletes the specified tag for a hostname

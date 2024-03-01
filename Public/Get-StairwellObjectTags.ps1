@@ -1,5 +1,5 @@
 function Get-StairwellObjectTags {
-    [alias('SwObjTags')]
+    [alias('GSOT')]
     <#
     .SYNOPSIS
     Gets the object tags from Stairwell

@@ -1,5 +1,5 @@
 function Get-StairwellObjectOpinions {
-    [alias('SwObjOpinions')]
+    [alias('GSOO')]
     <#
     .SYNOPSIS
     Gets the object opinions from Stairwell

@@ -1,5 +1,5 @@
 function Add-StairwellObjectComment {
-    [alias('SwObjComment')]
+    [alias('ASOC')]
     <#
     .SYNOPSIS
     Creates a new comment for an object

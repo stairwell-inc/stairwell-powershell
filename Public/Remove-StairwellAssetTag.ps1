@@ -1,5 +1,4 @@
 function Remove-StairwellAssetTag {
-    [alias('SwDeleteAssetTag')]
     <#
     .SYNOPSIS
     Deletes the specified tag for an asset

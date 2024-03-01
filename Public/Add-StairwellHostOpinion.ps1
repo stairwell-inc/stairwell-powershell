@@ -1,5 +1,4 @@
 function Add-StairwellHostOpinion {
-    [alias('AddSwHostOpinion')]
     <#
     .SYNOPSIS
     Creates a new opinion for an object

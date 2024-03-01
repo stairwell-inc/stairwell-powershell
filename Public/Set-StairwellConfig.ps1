@@ -1,5 +1,5 @@
 function Set-StairwellConfig {
-    # [alias('SwConfig')]
+    [alias('SSwC')]
     <#
     .SYNOPSIS
     Enable Stairwell module

@@ -1,5 +1,4 @@
 function Edit-StairwellYaraRule {
-    [alias('SwEditRule')]
     <#
     .SYNOPSIS
     Edits a given Yara rule

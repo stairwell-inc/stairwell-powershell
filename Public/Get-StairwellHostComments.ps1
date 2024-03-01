@@ -1,5 +1,4 @@
 function Get-StairwellHostComments {
-    [alias('SwObjComments')]
     <#
     .SYNOPSIS
     Gets the host comments from Stairwell

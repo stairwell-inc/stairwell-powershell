@@ -1,4 +1,5 @@
 function Send-StairwellFile {
+    [alias('SSwF')]
     <#
     .SYNOPSIS
     Function that sends files to Stairwell for analysis.

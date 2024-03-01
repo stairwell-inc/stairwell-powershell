@@ -1,5 +1,4 @@
 function Remove-StairwellYaraRuleTag {
-    [alias('SwDeleteRuleTag')]
     <#
     .SYNOPSIS
     Deletes the specified tag for a Yara rule

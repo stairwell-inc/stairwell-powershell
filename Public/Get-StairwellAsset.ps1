@@ -1,5 +1,5 @@
 function Get-StairwellAsset {
-    [alias('SwAsset')]
+    [alias('GSwA')]
     <#
     .SYNOPSIS
     Obtains the assets infomation for a given AssetId

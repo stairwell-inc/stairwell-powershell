@@ -1,5 +1,4 @@
 function Add-StairwellHostTag {
-    [alias('AddSwHostTag')]
     <#
     .SYNOPSIS
     Creates a new tag for a hostname

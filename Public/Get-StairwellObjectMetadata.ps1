@@ -1,5 +1,5 @@
 function Get-StairwellObjectMetadata {
-    [alias('SwObjMetadata')]
+    [alias('GSOM')]
     <#
     .SYNOPSIS
     Gets the object metadata from Stairwell

@@ -1,5 +1,4 @@
 function Remove-StairwellObjectTag {
-    [alias('SwDeleteObjTag')]
     <#
     .SYNOPSIS
     Deletes the specified tag for an object

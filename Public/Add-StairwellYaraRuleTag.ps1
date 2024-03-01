@@ -1,5 +1,4 @@
 function Add-StairwellYaraRuleTag {
-    [alias('AddSwYaraRuleTag')]
     <#
     .SYNOPSIS
     Creates a new tag for a Yara rule

@@ -1,5 +1,5 @@
 function Add-StairwellObjectOpinion {
-    [alias('AddSwObjOpinion')]
+    [alias('ASOO')]
     <#
     .SYNOPSIS
     Creates a new opinion for an object

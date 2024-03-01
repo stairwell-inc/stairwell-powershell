@@ -1,5 +1,4 @@
 function Get-StairwellHostOpinions {
-    [alias('SwHostOpinions')]
     <#
     .SYNOPSIS
     Gets the hostname opinions from Stairwell

@@ -1,6 +1,6 @@
 ![Stairwell, Inc.](https://github.com/stairwell-inc/stairwell-powershell/blob/main/Stairwell_Primary-Logo_RGB.png)
 
-### stairwell-powershell is a PowerShell module used to aid in the utilization of the Stairwell platform. stairwell-powershell is comprised of the following functions:
+### stairwell-powershell is a PowerShell module to aid in the utilization of the Stairwell platform. stairwell-powershell is comprised of the following cmdlets:
 
 ## Assets/Forwarders
 
@@ -10,11 +10,11 @@
 
 Creates and applies a new tag for an asset.
 
-#### `Get-StairwellAsset`
+#### `Get-StairwellAsset` - alias (GSwA)
 
 Obtains the asset infomation for a given AssetId.
 
-#### `Get-StairwellAssetList`
+#### `Get-StairwellAssetList` - alias (GSAL)
 
 Obtains the all assets for a given Stairwell environment
 
@@ -22,7 +22,7 @@ Obtains the all assets for a given Stairwell environment
 
 Obtains the asset's tag infomation for a given AssetId
 
-#### `Get-StairwellDefaultAsset`
+#### `Get-StairwellDefaultAsset` - alias (GSAL)
 
 Obtains the default asset id for a given Stairwell environment
 
@@ -34,43 +34,43 @@ Deletes the specified tag for an asset
 
 **Tools for analyzing, classifying, or interacting with objects/files.**
 
-#### `Add-StairwellObjectComment`
+#### `Add-StairwellObjectComment` - alias (ASOC)
 
 Creates a new comment for an object.
 
-#### `Add-StairwellObjectOpinion`
+#### `Add-StairwellObjectOpinion` - alias (ASOO)
 
 Creates and applies a new opinion for an object.
 
-#### `Add-StairwellObjectTag`
+#### `Add-StairwellObjectTag` - alias (ASOT)
 
 Creates and applies a new tag for an object.
 
-#### `Find-StairwellObjectMetadata`
+#### `Find-StairwellObjectMetadata` - alias (FSOM)
 
 Search all Stairwell objects using a CEL query.
 
-#### `Get-StairwellDetonation`
+#### `Get-StairwellDetonation` - alias (GSD)
 
 Gets the object detonation report from Stairwell.
 
-#### `Get-StairwellObjectComments`
+#### `Get-StairwellObjectComments` - alias (GSOC)
 
 Gets the comments for a given object from Stairwell.
 
-#### `Get-StairwellObjectMetadata`
+#### `Get-StairwellObjectMetadata` - alias (GSOM)
 
 Gets the object metadata from Stairwell which includes: file size, various hash values, malEval analysis, Yara rule matches, etc.
 
-#### `Get-StairwellObjectOpinions`
+#### `Get-StairwellObjectOpinions` - alias (GSOO)
 
 Gets the most recent object opinion from Stairwell
 
-#### `Get-StairwellObjectSightings`
+#### `Get-StairwellObjectSightings` - alias (GSOS)
 
 Gets the object sightings (if any in the working environment) from Stairwell.
 
-#### `Get-StairwellObjectTags`
+#### `Get-StairwellObjectTags` - alias (GSOT)
 
 Gets the object tags from Stairwell.
 
@@ -78,11 +78,11 @@ Gets the object tags from Stairwell.
 
 Gets the object variants (statistically similar files) from Stairwell
 
-#### `Invoke-StairwellDetonation`
+#### `Invoke-StairwellDetonation` - alias (Detonate)
 
 Triggers a new detonation for the parent object.
 
-#### `Receive-StairwellObject`
+#### `Receive-StairwellObject` - alias (RSO)
 
 Downloads the full object to the user's local device.
 
@@ -90,7 +90,7 @@ Downloads the full object to the user's local device.
 
 Deletes the specified tag for an object
 
-#### `Send-StairwellFile`
+#### `Send-StairwellFile` - alias (SSwF)
 
 Function that sends files to Stairwell for analysis.
 
@@ -114,7 +114,7 @@ Creates and applies a new tag for a hostname.
 
 Gets the host comments from Stairwell.
 
-#### `Get-StairwellHostMetadata`
+#### `Get-StairwellHostMetadata` - alias (GSHM)
 
 Gets the hostname metadata from Stairwell.
 
@@ -150,7 +150,7 @@ Creates and applies a new tag for a IpAddress.
 
 Gets the IpAddress comments from Stairwell.
 
-#### `Get-StairwellIpMetadata`
+#### `Get-StairwellIpMetadata` - alias (GIPM)
 
 Gets the IpAddress metadata from Stairwell.
 
@@ -174,7 +174,7 @@ Creates and applies a new tag for a Yara rule.
 
 Edits/updates a given Yara rule.
 
-#### `Get-StairwellYaraRule`
+#### `Get-StairwellYaraRule` - alias (GSYR)
 
 Obtains the metadata and definition for a given Yara rule.
 
@@ -198,11 +198,11 @@ Deletes the specified tag for a Yara rule.
 
 **Miscellaneous helper functions**
 
-#### `Get-StairwellConfig`
+#### `Get-StairwellConfig` - alias (GSwC)
 
 Gets the curretnly active Stairwell environment variables.
 
-#### `Set-StairwellConfig`
+#### `Set-StairwellConfig` - alias (SSwC)
 
 Enables the Stairwell module by accepting the Stairwell Environment ID and API Token.
 
@@ -215,7 +215,9 @@ To install this module, drop the entire stairwell-powershell folder into one of 
 The default per-user module path is: "$Env:HomeDrive$Env:HOMEPATH\Documents\WindowsPowerShell\Modules"
 The default computer-level module path is: "$Env:windir\System32\WindowsPowerShell\v1.0\Modules"
 
-To use the module, type `Import-Module Stairwell`
+Depending on execution policy and where you store this module, you may need to run `Get-ChildItem <path to this module folder> -recurse | Unblock-File`
+
+To use the module, type `Import-Module Stairwell` or `Import-Module -Path <path to this module folder>`
 
 To see the commands imported, type `Get-Command -Module Stairwell`
 

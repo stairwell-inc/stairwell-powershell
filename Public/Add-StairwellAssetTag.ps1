@@ -1,5 +1,4 @@
 function Add-StairwellAssetTag {
-    [alias('AddSwAssetTag')]
     <#
     .SYNOPSIS
     Creates a new tag for an asset

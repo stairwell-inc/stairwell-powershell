@@ -1,5 +1,5 @@
 function Add-StairwellObjectTag {
-    [alias('AddSwObjTag')]
+    [alias('ASOT')]
     <#
     .SYNOPSIS
     Creates a new tag for an object

@@ -1,5 +1,4 @@
 function Add-StairwellIpTag {
-    [alias('AddSwIpTag')]
     <#
     .SYNOPSIS
     Creates a new tag for a IpAddress

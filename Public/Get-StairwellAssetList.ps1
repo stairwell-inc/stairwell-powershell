@@ -1,5 +1,5 @@
 function Get-StairwellAssetList {
-    [alias('SwAllAssets')]
+    [alias('GSAL')]
     <#
     .SYNOPSIS
     Obtains the all assets for a given Stairwell environment

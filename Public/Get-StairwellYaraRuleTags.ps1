@@ -1,5 +1,4 @@
 function Get-StairwellYaraRuleTags {
-    [alias('SwRuleTags')]
     <#
     .SYNOPSIS
     Obtains the tag metadata for a given Yara rule

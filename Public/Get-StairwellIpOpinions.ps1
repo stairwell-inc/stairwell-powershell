@@ -1,5 +1,4 @@
 function Get-StairwellIpOpinions {
-    [alias('SwIpOpinions')]
     <#
     .SYNOPSIS
     Gets the IpAddress opinions from Stairwell

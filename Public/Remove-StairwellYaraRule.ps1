@@ -1,5 +1,4 @@
 function Remove-StairwellYaraRule {
-    [alias('SwDeleteRule')]
     <#
     .SYNOPSIS
     Deletes a Yara rule

@@ -1,5 +1,5 @@
 function Get-StairwellYaraRule {
-    [alias('SwRule')]
+    [alias('GSYR')]
     <#
     .SYNOPSIS
     Obtains the metadata and definition for a given Yara rule
